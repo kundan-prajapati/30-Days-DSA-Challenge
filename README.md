@@ -11,4 +11,3 @@ Approach:
     -> Space Complexity: O(1) — only a few extra variables used, no extra data structures
     -> Prints the first valid pair of indices and values if found
     -> Prints message if no valid pair exists
--->
