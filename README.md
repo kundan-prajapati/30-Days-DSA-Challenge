@@ -27,3 +27,18 @@ Approach:
 → Time Complexity: O(max(n, m)) — where n and m are lengths of the two lists
 → Space Complexity: O(max(n, m)) — output list size
 
+
+
+Day 3: Reverse Integer
+Problem Description:
+    Given a signed 32-bit integer x, reverse its digits.
+    If the reversed integer overflows the 32-bit signed integer range [-2³¹, 2³¹ - 1], return 0.
+
+Approach:
+→ Used a while loop to extract digits using % 10
+→ Build the reversed number using multiplication and addition
+→ Before updating, check for overflow using INT_MAX and INT_MIN
+→ If overflow detected, return 0
+→ Else, return the reversed number
+→ Time Complexity: O(log₁₀n) — Proportional to the number of digits in the integer
+→ Space Complexity: O(1) — Constant space used for a few variables only
