@@ -42,3 +42,20 @@ Approach:
 → Else, return the reversed number
 → Time Complexity: O(log₁₀n) — Proportional to the number of digits in the integer
 → Space Complexity: O(1) — Constant space used for a few variables only
+
+
+
+Day 4: Reverse Integer
+Problem Description:
+    Given a signed 32-bit integer x, reverse its digits.
+    If the reversed integer overflows the signed 32-bit integer range [-2³¹, 2³¹ - 1], return 0.
+
+Approach:
+→ Extract digits using % 10 in a while loop
+→ Build reversed number by multiplying previous result by 10 and adding digit
+→ Check for overflow before updating result using INT_MAX and INT_MIN
+→ Return 0 if overflow detected, else return reversed number
+
+Time Complexity: O(log₁₀n) — proportional to number of digits
+Space Complexity: O(1) — constant extra space
+
