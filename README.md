@@ -59,3 +59,25 @@ Approach:
 Time Complexity: O(log₁₀n) — proportional to number of digits
 Space Complexity: O(1) — constant extra space
 
+
+
+Day 5: String to Integer (Atoi)
+
+Problem Description:
+    Given a string, convert it to a 32-bit signed integer similar to the C/C++ atoi function.
+    The function should:
+→ Skip leading whitespaces
+→ Handle optional '+' or '-' sign
+→ Convert following digits into an integer
+→ Stop parsing when a non-digit character is encountered
+→ If the result overflows 32-bit signed int range [-2³¹, 2³¹ - 1], return INT_MAX or INT_MIN
+
+Approach:
+→ Skip whitespaces using a loop
+→ Detect and store the sign
+→ Extract digits using isdigit() and build the number
+→ Before adding digits, check for potential overflow using INT_MAX and INT_MIN
+→ Return the final value after applying sign
+
+Time Complexity: O(n) — where n is the length of the string
+Space Complexity: O(1) — only constant extra variables used
